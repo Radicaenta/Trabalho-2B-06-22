@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tranzit Simulator</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="fontepixel texta">Tranzit <br> Simulator</div>
+
+  
+
+  <div class="fundo lado ">  
+  <div class=" up fontepixel textb">
+   <span> Double <br> Click <br> Here! <br> </span>
+    <img class="seta" src="./Img/seta.png" alt="Seta indicando semaforo">
+  
+  </div>
+  <div class="flex end"">
+  <div class="contorno">
+    
+    <div><button onclick="vermelho()" id="vermelho" class="opacidade"></button></div>
+    <div><button onclick="amarelo()" id="amarelo" class="opacidade"></button></div>
+    <div><button onclick="verde()" id="verde"  class="opacidade"></button></div>
+    
+  </div>
+  <div class="rua" id ="rua">
+   <img src="./Img/car.png" alt="carro sendo guiado pelo farol" class="mov car" id="carr">
+
+    
+      
+  </div>
+  </div>
+</div>
+ 
+  <script src="script.js"></script>
+</body>
+
+</html>

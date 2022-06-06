@@ -1,0 +1,234 @@
+html, body {
+ background-image: url("./Img/back.png");
+ font-family: 'Quicksand', sans-serif;
+ background-repeat: repeat;
+}
+
+/*  Fonte */
+.fontepixel {
+  font-family: 'Press Start 2P', cursive;
+}
+
+
+/* Titulo  */
+.texta {
+text-align: center;
+font-size: 60px;
+max-width:100%;
+color: #ffffff;
+text-shadow: 4px 4px black;
+margin: 30px auto;
+}
+
+/* Texto "double click" */
+.textb {
+ margin-top: 150px;
+ margin-left: 20px;
+ font-size: 25px;
+ color: #000f99;
+ text-shadow: 4px 3px white;
+  
+}
+
+/* Janela do simulador */
+.fundo {
+  margin: 0;
+  background-image: url("./Img/fundo.gif");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment:local;
+  background-color: black;
+  border-radius: 30px;
+  position: absolute;
+  height: 60%;
+}
+
+/* Luzes do Semaforo  */
+#vermelho {
+  margin-top: 23px;
+  width: 80%;
+  min-height: 100px;
+  border-radius: 50%;
+  border: black 5px solid;
+  background-color: red;
+  
+}
+#amarelo {
+  margin-top: 10px;
+  width: 80%;
+  min-height: 100px;
+  border-radius: 50%;
+  border: black 5px solid;
+  background-color: #fff70a;
+}
+#verde {
+  margin-top: 10px;
+  width: 80%;
+  min-height: 100px;
+  border-radius: 50%;
+  border: black 5px solid;
+  background-color: #00ff1e
+}
+
+.opacidade {
+ opacity: 0.50;
+}
+
+
+
+/* Semaforo */
+
+.contorno {
+  position: relative; 
+  text-align: center;
+  margin: 0 auto;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  height: 500px;
+  background-color:#4d4c4c;
+  border:#1a1a1a 5px solid;
+  border-radius:20% ;
+}
+
+
+/* Área de animação do "double click e seta" */
+
+.up {
+  position: relative;
+ height: 250px;
+ animation: pulando 1s alternate infinite;
+  
+}
+
+@keyframes pulando{
+ 0%   {top:-70px}
+ 100% {top:50px}
+}
+
+
+/* Div flex que deixa o semaforo e carro em baixo, e o texto em cima */
+.lado {
+  position: relative;
+  flex-direction: column;
+  display: flex; 
+}
+
+/* Div com carro e semaforo */
+
+.flex {
+  position:relative;
+  display: flex; 
+  align-items:flex-end;
+}
+
+/* Div com carro */
+
+.rua{
+  width:90%
+}
+
+.car {
+  margin-left: 0px;
+  width: 15%;
+  position:relative;
+}
+
+/* Animação inicial do carro */
+
+.mov {
+  animation: movcarro 4s linear infinite;
+}
+
+ @keyframes movcarro {
+ from {left: 68%;}
+  to {left: 0%;}
+}
+
+/* Seta do "double click"*/
+
+.seta{
+ margin-top:15px;
+ width: 50px;
+ height: 85px;
+ margin-left: 2px;
+ transform: rotate(180deg);
+}
+
+/* adaptação mobile */
+
+@media only screen and (max-width: 600px) {
+
+html, body {
+  background-size: 80px;
+}
+
+  
+  .texta {
+    font-size: 20px;
+  }
+
+
+  
+ .contorno{
+   position: relative;
+   height: 200px;
+   width: 20%;
+ }
+
+ .textb{
+ margin-top: 30%;
+ margin-left: 10px;
+ font-size: 12px;
+text-shadow: 2px 1px white;
+ }
+ .seta{
+ margin-top:10px;
+ width: 33px;
+ height: 19px;
+ }
+
+ .car {
+  margin-left: 0px;
+  width: 25%;
+  position:relative;
+ }
+
+#vermelho {
+  margin-top: 13px;
+  width: 80%;
+  min-height: 30px;
+  border-radius: 50%;
+  border: black 3px solid;
+  background-color: red;
+  
+}
+#amarelo {
+  margin-top: 10px;
+  width: 80%;
+  min-height: 30px;
+  border-radius: 50%;
+  border: black 3px solid;
+  background-color: #fff70a;
+}
+#verde {
+  margin-top: 10px;
+  width: 80%;
+  min-height: 30px;
+  border-radius: 50%;
+  border: black 3px solid;
+  background-color: #00ff1e;}
+
+.up {
+  position: relative;
+  height: 50px;
+  animation: pulando 1s alternate infinite;
+  
+}
+
+@keyframes pulando{
+ 0%   {top:-70px}
+ 100% {top:-20px}
+}
+}
