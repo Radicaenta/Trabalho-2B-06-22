@@ -1,4 +1,4 @@
-# Trabalho-2B-06-22
+# Tranzit Simulator
 
  A minha aplicação no html chamada "Tranzit Simulator", consiste em um carro que reage as cores semáforo.
  No Javascript eu fiz com que o botão verde do semaforo ativasse a "class" de opacidade 0.4 nos botões vermelho e amarelo, além de ativar a animação em keyframes no
@@ -8,3 +8,6 @@ em keyframes no carro, na qual ele corre mais devagar que o amarelo. Mais especi
  No botão vermelho do semaforo, eu também fiz com que ativasse a "class" de opacidade 0.4 nos botões amarelo e verde, além de desativar qualquer outra animação em
 keyframe que esteja ativada. Mais especificamente deixando em "none". ( Essa foi a função "vermelho ()")
  E no inicio do código eu ativei a função "amarelo", para que toda vez que a aplicação for iniciada o carro ja começar no amarelo com aquela velocidade.
+ 
+ 
+ - Paulo Rhyan Kuster
