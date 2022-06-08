@@ -86,7 +86,7 @@ margin: 30px auto;
   display: flex;
   flex-direction: column;
   width: 10%;
-  height: 500px;
+  height: 400px;
   background-color:#4d4c4c;
   border:#1a1a1a 5px solid;
   border-radius:20% ;
@@ -97,14 +97,14 @@ margin: 30px auto;
 
 .up {
   position: relative;
- height: 250px;
+ height: 150px;
  animation: pulando 1s alternate infinite;
   
 }
 
 @keyframes pulando{
- 0%   {top:-70px}
- 100% {top:50px}
+ 0%   {top:-120px}
+ 100% {top:-30px}
 }
 
 
